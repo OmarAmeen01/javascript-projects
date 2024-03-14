@@ -1,0 +1,81 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+#accordian{
+  
+    padding:1rem;
+    border-radius: .2rem;
+    box-shadow: .4rem .4rem 1rem;
+    margin:1rem;
+position: relative;
+
+white-space: wrap;
+}
+.content{
+    margin:2rem;
+}
+#accordian::before{
+    content: " ";
+    background-color: rgb(117, 209, 240);
+    opacity: 0.5;
+    filter: blur(9rem);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+#accordian h1{
+    font-size: 2.5rem;
+    text-align: center;
+    padding-bottom: 1rem;
+letter-spacing: .1rem;
+
+}
+#accordian .content .question{
+font-size: 2rem;
+border-bottom: 2px solid #ffff;
+
+position:relative;
+letter-spacing: .1rem;
+transition:.5s
+}
+
+#accordian .content .answer{
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+    height: 0px;
+
+    overflow: hidden;
+    transition:.5s
+
+}
+
+.question::after{
+    content: "+";
+    position: absolute;
+right:-.5rem;
+font-size: 2.5rem;
+transition:.2s;
+bottom:1rem ;
+}
+
+#accordian .content.active .answer{
+    height: 100%;
+padding:1rem;
+
+}
+#accordian .content.active .question{
+    font-size:1.5rem
+}
+#accordian .content.active .question::after{
+    content:'-';
+    color:red;
+}

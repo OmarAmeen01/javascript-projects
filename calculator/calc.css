@@ -1,0 +1,106 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-size: 62.5%;
+  
+   
+}
+
+body{ 
+    height: 100vh;
+    display:grid;
+    place-items: center;
+    font-size: 8rem;
+    -webkit-user-select: none;
+    user-select: none;
+
+
+   
+}
+main{
+    border: 5px solid black;
+max-width: 320px;
+
+}
+#outputfield{
+ -webkit-user-select: none;
+ user-select: none;
+/* overflow:hidden; */
+}
+#output-input{
+ border:none;
+    padding: 1rem 0.5rem;
+    width:100%;
+    /* overflow: hidden; */
+outline:none;
+font-size: 3rem;
+-ms-user-select: none;
+-moz-user-select: none;
+-webkit-user-select:none;
+user-select:none;
+}
+
+
+#output{
+    padding:1rem .5rem;
+    color:grey;
+    text-align: right;
+-webkit-user-select: none;
+
+
+user-select: none;
+font-size: 3rem;
+
+}
+#buttons{
+    display: grid;
+    grid-template-columns: repeat(4,4fr);
+    padding:1rem;
+}
+#buttons > button{
+    margin:.8rem .8rem;
+    
+}
+.numbers{
+    border:none;
+  background-color:transparent;
+}
+
+.operator, #percentage{
+    font-size: 3rem;
+padding:1.5rem;
+
+outline: none;
+border:none;
+background-color:transparent;
+color:orange;
+
+transition: all 0.1s;
+}
+#cut{
+    color:red;
+    transition: all 0.1s;
+
+}
+#equals{
+    color:forestgreen;
+    transition: all .1s;
+}
+
+/* hover section for buttons and operators */
+.operator:hover, #percentage:hover{
+  outline: 1px solid red;
+}
+#equals:hover, #cut:hover{
+    background-color:red;
+    color: black;
+
+}
+.numbers:hover{
+    outline:1px solid red
+}
+.operator:active, .numbers:active{
+background-color:rgba(235, 135, 157, 0.918)
+;
+}

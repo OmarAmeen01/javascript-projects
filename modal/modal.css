@@ -1,0 +1,81 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+body{
+background-image: url(mini.jpg);
+background-repeat: no-repeat;
+background-position: center center;
+height: 100vh;
+}
+
+#btn{
+    font-size: 3rem;
+    position:absolute;
+    left: 0;
+    bottom:3rem;
+    padding:2rem;
+    background-color:transparent;
+    border:.2rem solid #fff;
+    margin-left:3rem;
+    border-radius:1rem;
+    font-weight: 600;
+    letter-spacing: .4rem;
+}
+#btn:hover{
+    transition: letter-spacing .1s linear;
+    letter-spacing: .5rem;
+    border:.3rem solid black;
+cursor: pointer;
+}
+#main{
+  
+    position:absolute;
+   top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+   
+    padding: 2rem;
+    border-radius:1rem;
+    font-weight: 600;
+    letter-spacing: .4rem;
+  display:none; 
+ 
+
+    animation: main-ani 1s ease-in-out ;
+}
+#click{
+height: 100%;
+width:100%;
+z-index: -1;
+}
+
+@keyframes main-ani {
+    from{
+        top:0%;
+        opacity:0;
+    }
+
+    
+}
+p{
+    font-size: 3rem;
+ 
+}
+#close{
+    font-size: 4rem;
+    border-radius:1rem;
+    font-weight: 600;
+    letter-spacing: .6rem;
+    border:none;
+    margin-left: 2rem;
+color:green;
+background-color:transparent;
+}
+#close:hover{
+color: red;
+cursor: pointer;
+}
